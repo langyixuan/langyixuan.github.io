@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>npm 常用命令总结（二） | Yixuan Lang</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/icon.png">
+    <meta name="description" content="Personal Blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preload" href="/assets/css/0.styles.e92b3637.css" as="style"><link rel="preload" href="/assets/js/app.1cc6a2a0.js" as="script"><link rel="preload" href="/assets/js/10.af7af87f.js" as="script"><link rel="preload" href="/assets/js/1.d721c287.js" as="script"><link rel="preload" href="/assets/js/2.a6625a17.js" as="script"><link rel="preload" href="/assets/js/49.18a23d31.js" as="script"><link rel="prefetch" href="/assets/js/11.1478243f.js"><link rel="prefetch" href="/assets/js/12.9cfaa6a1.js"><link rel="prefetch" href="/assets/js/13.840afc17.js"><link rel="prefetch" href="/assets/js/14.c33731c4.js"><link rel="prefetch" href="/assets/js/15.1d4f30d2.js"><link rel="prefetch" href="/assets/js/16.779df24a.js"><link rel="prefetch" href="/assets/js/17.8ed01cbf.js"><link rel="prefetch" href="/assets/js/18.a6e10687.js"><link rel="prefetch" href="/assets/js/19.77f678c6.js"><link rel="prefetch" href="/assets/js/20.85c614af.js"><link rel="prefetch" href="/assets/js/21.31265ddc.js"><link rel="prefetch" href="/assets/js/22.b1621767.js"><link rel="prefetch" href="/assets/js/23.f0a291f7.js"><link rel="prefetch" href="/assets/js/24.123f9fe3.js"><link rel="prefetch" href="/assets/js/25.efee8612.js"><link rel="prefetch" href="/assets/js/26.def2eb66.js"><link rel="prefetch" href="/assets/js/27.645bcd10.js"><link rel="prefetch" href="/assets/js/28.574855ee.js"><link rel="prefetch" href="/assets/js/29.133560e9.js"><link rel="prefetch" href="/assets/js/30.3c36e1f6.js"><link rel="prefetch" href="/assets/js/31.fb1b0085.js"><link rel="prefetch" href="/assets/js/32.20ab48be.js"><link rel="prefetch" href="/assets/js/33.230fc354.js"><link rel="prefetch" href="/assets/js/34.c41f1aab.js"><link rel="prefetch" href="/assets/js/35.c0d9aa27.js"><link rel="prefetch" href="/assets/js/36.82eee096.js"><link rel="prefetch" href="/assets/js/37.d92ee0fa.js"><link rel="prefetch" href="/assets/js/38.66deb509.js"><link rel="prefetch" href="/assets/js/39.7494c137.js"><link rel="prefetch" href="/assets/js/40.a7786b80.js"><link rel="prefetch" href="/assets/js/41.42d39b07.js"><link rel="prefetch" href="/assets/js/42.fabfa4c3.js"><link rel="prefetch" href="/assets/js/43.58bb2676.js"><link rel="prefetch" href="/assets/js/44.2d19f51d.js"><link rel="prefetch" href="/assets/js/45.af519a16.js"><link rel="prefetch" href="/assets/js/46.0a192199.js"><link rel="prefetch" href="/assets/js/47.1b61507d.js"><link rel="prefetch" href="/assets/js/48.e7074b4c.js"><link rel="prefetch" href="/assets/js/5.635891c4.js"><link rel="prefetch" href="/assets/js/50.ac95baf0.js"><link rel="prefetch" href="/assets/js/51.ca5ef2a5.js"><link rel="prefetch" href="/assets/js/52.acf403b5.js"><link rel="prefetch" href="/assets/js/53.2d665686.js"><link rel="prefetch" href="/assets/js/6.f062383c.js"><link rel="prefetch" href="/assets/js/7.c525aff2.js"><link rel="prefetch" href="/assets/js/8.fef13ba6.js"><link rel="prefetch" href="/assets/js/9.c4f449fa.js"><link rel="prefetch" href="/assets/js/vendors~photo-swipe.cbb76b99.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e92b3637.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="theme-container" class="theme-container post-container no-sidebar" data-v-258a8948><header class="navbar invert" data-v-258a8948><a href="/" class="home-link router-link-active"><span class="site-name"> $ cd /home/ </span></a> <div class="links"><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 20a1 1 0 01-1 1H5a1 1 0 01-1-1v-9H1l10.327-9.388a1 1 0 011.346 0L23 11h-3v9zM7 11v2a5 5 0 015 5h2a7 7 0 00-7-7zm0 4v3h3a3 3 0 00-3-3z"/></svg>
+  主页
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-1.6 -1.6 19.2 19.2" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path d="M2 1a1 1 0 00-1 1v4.586a1 1 0 00.293.707l7 7a1 1 0 001.414 0l4.586-4.586a1 1 0 000-1.414l-7-7A1 1 0 006.586 1H2zm4 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  标签
+</a></div><div class="nav-item"><a href="/links/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.06 8.11l1.415 1.415a7 7 0 010 9.9l-.354.353a7 7 0 01-9.9-9.9l1.415 1.415a5 5 0 107.071 7.071l.354-.354a5 5 0 000-7.07l-1.415-1.415 1.415-1.414zm6.718 6.011l-1.414-1.414a5 5 0 10-7.071-7.071l-.354.354a5 5 0 000 7.07l1.415 1.415-1.415 1.414-1.414-1.414a7 7 0 010-9.9l.354-.353a7 7 0 019.9 9.9z"/></svg>
+  链接
+</a></div><div class="nav-item"><a href="/bb/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.455 19L2 22.5V4a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"/></svg>
+  哔哔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 18H6a1 1 0 000 2h15v2H6a3 3 0 01-3-3V4a2 2 0 012-2h16v16zm-5-9V7H8v2h8z"/></svg>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/photinia/" class="nav-link ov-parent ov-hover"><!---->
+  Photinia
+</a></li><li class="dropdown-item"><!----> <a href="/docs/vuepress-plugin-rightmenu/" class="nav-link ov-parent ov-hover"><!---->
+  rightmenu
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-1.6 -1.6 19.2 19.2" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path d="M11 6a3 3 0 11-6 0 3 3 0 016 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-7a7 7 0 00-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 008 1z"/></svg>
+  关于
+</a></div> <div class="nav-item"><a class="nav-link ov-parent ov-hover" style="cursor: pointer"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z"/></svg>
+      搜索
+    </a></div></nav></div></header> <div class="sidebar-mask" data-v-258a8948></div> <aside class="sidebar" data-v-258a8948><div class="personal-info-wrapper" data-v-258a8948><div class="mobile-hero-avatar" data-v-258a8948><img src="/images/icon.jpg" alt="hero" data-v-258a8948></div> <p class="mobile-heading" data-v-258a8948>
+          Yixuan Lang
+        </p> <div class="sns-wrapper" data-v-258a8948><a href="https://github.com/https://github.com/langyixuan" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="0" height="0" viewBox="0 0 0 0" fill="currentColor" class="icon-stack ov-icon" style="font-size:1.2em;"><!----> <svg aria-hidden="true" width="19.2" height="19.2" viewBox="-59.52 -43.52 599.04 599.04" fill="currentColor" class="icon-sns ov-icon ov-inverse" style="font-size:1.2em;"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg></svg></a><a href="mailto:langyixuan890@gmail.com" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="0" height="0" viewBox="0 0 0 0" fill="currentColor" class="icon-stack ov-icon" style="font-size:1.2em;"><!----> <svg aria-hidden="true" width="19.2" height="19.2" viewBox="-3.2 -3.2 38.4 38.4" fill="currentColor" class="icon-sns ov-icon ov-inverse" style="font-size:1.2em;"><path d="M32 6v20c0 1.135-.865 2-2 2h-2V9.849l-12 8.62-12-8.62V28H2c-1.135 0-2-.865-2-2V6c0-.568.214-1.068.573-1.422A1.973 1.973 0 012 4h.667L16 13.667 29.333 4H30c.568 0 1.068.214 1.427.578.359.354.573.854.573 1.422z"/></svg></svg></a> <a href="https://space.bilibili.com/191823311" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="0" height="0" viewBox="0 0 0 0" fill="currentColor" class="icon-stack ov-icon" style="font-size:1.2em;"><!----> <svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="icon-sns ov-icon ov-inverse" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.223 3.086a1.25 1.25 0 010 1.768L17.08 5.996h1.17A3.75 3.75 0 0122 9.747v7.5a3.75 3.75 0 01-3.75 3.75H5.75A3.75 3.75 0 012 17.247v-7.5a3.75 3.75 0 013.75-3.75h1.166L5.775 4.855a1.25 1.25 0 111.767-1.768l2.652 2.652c.079.079.145.165.198.257h3.213c.053-.092.12-.18.199-.258l2.651-2.652a1.25 1.25 0 011.768 0zm.027 5.42H5.75a1.25 1.25 0 00-1.247 1.157l-.003.094v7.5c0 .659.51 1.199 1.157 1.246l.093.004h12.5a1.25 1.25 0 001.247-1.157l.003-.093v-7.5c0-.69-.56-1.25-1.25-1.25zm-10 2.5c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 11-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25zm7.5 0c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 11-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25z"/></svg></svg></a><a href="https://music.163.com/#/user/home?id=416843684" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="0" height="0" viewBox="0 0 0 0" fill="currentColor" class="icon-stack ov-icon" style="font-size:1.2em;"><!----> <svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="icon-sns ov-icon ov-inverse" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1.086-10.432c.24-.84 1.075-1.541 1.99-1.648.187.694.388 1.373.545 2.063.053.23.037.495-.018.727-.213.892-1.248 1.242-1.978.685-.53-.405-.742-1.12-.539-1.827zm3.817-.197c-.125-.465-.256-.927-.393-1.42.5.13.908.36 1.255.698 1.257 1.221 1.385 3.3.294 4.731-1.135 1.49-3.155 2.134-5.028 1.605-2.302-.65-3.808-2.952-3.441-5.316.274-1.768 1.27-3.004 2.9-3.733.407-.182.58-.56.42-.93-.157-.364-.54-.504-.944-.343-2.721 1.089-4.32 4.134-3.67 6.987.713 3.118 3.495 5.163 6.675 4.859 1.732-.165 3.164-.948 4.216-2.347 1.506-2.002 1.297-4.783-.463-6.499-.666-.65-1.471-1.018-2.39-1.153-.083-.013-.217-.052-.232-.106-.087-.313-.18-.632-.206-.954-.029-.357.29-.64.65-.645.253-.003.434.13.603.3.303.3.704.322.988.062.29-.264.296-.678.018-1.008-.566-.672-1.586-.891-2.43-.523-.847.37-1.321 1.187-1.2 2.093.038.28.11.557.167.842l-.26.072a3.863 3.863 0 00-2.098 1.414c-.921 1.22-.936 2.828-.041 3.947 1.274 1.594 3.747 1.284 4.523-.568.284-.676.275-1.368.087-2.065z"/></svg></svg></a> <!----></div> <hr data-v-258a8948></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 20a1 1 0 01-1 1H5a1 1 0 01-1-1v-9H1l10.327-9.388a1 1 0 011.346 0L23 11h-3v9zM7 11v2a5 5 0 015 5h2a7 7 0 00-7-7zm0 4v3h3a3 3 0 00-3-3z"/></svg>
+  主页
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-1.6 -1.6 19.2 19.2" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path d="M2 1a1 1 0 00-1 1v4.586a1 1 0 00.293.707l7 7a1 1 0 001.414 0l4.586-4.586a1 1 0 000-1.414l-7-7A1 1 0 006.586 1H2zm4 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  标签
+</a></div><div class="nav-item"><a href="/links/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.06 8.11l1.415 1.415a7 7 0 010 9.9l-.354.353a7 7 0 01-9.9-9.9l1.415 1.415a5 5 0 107.071 7.071l.354-.354a5 5 0 000-7.07l-1.415-1.415 1.415-1.414zm6.718 6.011l-1.414-1.414a5 5 0 10-7.071-7.071l-.354.354a5 5 0 000 7.07l1.415 1.415-1.415 1.414-1.414-1.414a7 7 0 010-9.9l.354-.353a7 7 0 019.9 9.9z"/></svg>
+  链接
+</a></div><div class="nav-item"><a href="/bb/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.455 19L2 22.5V4a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"/></svg>
+  哔哔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 18H6a1 1 0 000 2h15v2H6a3 3 0 01-3-3V4a2 2 0 012-2h16v16zm-5-9V7H8v2h8z"/></svg>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/photinia/" class="nav-link ov-parent ov-hover"><!---->
+  Photinia
+</a></li><li class="dropdown-item"><!----> <a href="/docs/vuepress-plugin-rightmenu/" class="nav-link ov-parent ov-hover"><!---->
+  rightmenu
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link ov-parent ov-hover"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-1.6 -1.6 19.2 19.2" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path d="M11 6a3 3 0 11-6 0 3 3 0 016 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-7a7 7 0 00-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 008 1z"/></svg>
+  关于
+</a></div> <div class="nav-item"><a class="nav-link ov-parent ov-hover" style="cursor: pointer"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z"/></svg>
+      搜索
+    </a></div></nav> <!----> </aside> <div class="content" data-v-258a8948><div class="post-header style-img" style="background-image:url(https://s3.bmp.ovh/imgs/2022/12/20/0890d2cb13937222.jpg);padding-right:0;" data-v-65eb32a5> <div class="header-content" data-v-65eb32a5><div class="tags" data-v-65eb32a5><span class="tag" data-v-65eb32a5>
+        插件及工具
+      </span></div> <h1 class="title" data-v-65eb32a5>
+      npm 常用命令总结（二）
+    </h1> <h3 class="subtitle" data-v-65eb32a5>
+      记录一些npm的常用命令
+    </h3> <div class="icons" data-v-65eb32a5><div class="icon" data-v-65eb32a5><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-75.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:1.2em;" data-v-65eb32a5><path d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"/></svg> <span data-v-65eb32a5>Yixuan Lang</span></div> <div class="icon" data-v-65eb32a5><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-75.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:1.2em;" data-v-65eb32a5><path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"/></svg> <span data-v-65eb32a5>2022-10-05</span></div> <div class="icon" data-v-65eb32a5><svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor" class="ov-icon" style="font-size:1.2em;" data-v-65eb32a5><path fill="none" d="M0 0h24v24H0z"/><path d="M17.618 5.968l1.453-1.453 1.414 1.414-1.453 1.453a9 9 0 11-1.414-1.414zM12 20a7 7 0 100-14 7 7 0 000 14zM11 8h2v6h-2V8zM8 1h8v2H8V1z"/></svg> <span data-v-65eb32a5>4 min</span></div></div></div></div> <main class="page" style="padding-right:0;"><!----> <div class="theme-content content__default"><h1 id="npm-常用命令总结-二"><a href="#npm-常用命令总结-二" class="header-anchor">#</a> npm 常用命令总结（二）</h1> <hr> <p>之前在下载包的时候接触了几个 npm 命令，索性将常见的命令总结一下。</p> <ol><li><code>npm adduser</code>
+添加用户</li> <li><code>npm access</code>
+设置包的权限</li> <li><code>npm bugs</code>
+打开包的 bugs 报告页面</li> <li><code>npm bin [—-global]</code>
+查看 npm 可执行文件的目录</li> <li><code>npm config get registry</code>
+获取 npm 仓库地址</li> <li><code>npm config list [—-json]</code>
+获取 npm 配置信息</li> <li><code>npm config edit</code>
+编辑 npm 的配置信息</li> <li><code>npm config delete</code>
+删除某个配置
+npm c 是 npm config 别名</li> <li><code>npm cache add</code>
+通过 git 地址添加某个 tar 包到缓存</li> <li><code>npm cache clean —force</code>
+清除缓存文件 npm@5 后必须使用强制符</li> <li><code>npm cache verify</code>
+清理无用的缓存文件和校验缓存数据完整性</li> <li><code>npm completion &gt;&gt; ~/.zsh</code>
+npm 开启自动补全命令，设置后，按住 tab 键能自动提示 npm 命令</li> <li><code>npm deprecate [@]</code>
+添加对某个包的某个版本的反对信息。只有 owner 才可以，安装此包能看到这些反对信息</li> <li><code>npm dist-tag add @ []</code>
+为某个版本添加 tag，如果添加的 tag 为 latest，这个 tag 版本将成为最新版本。用户下载最新的时候会直接下载到该版本</li> <li><code>npm dist-tag rm</code>
+移除 tag</li> <li><code>npm dist-tag ls []</code>
+查看 tag 清单</li> <li><code>npm doctor</code>
+npm 诊断命令，npm 会对 npm 运行的环境进行检测诊断，包括 npm 的版本，git 版本，npm 使用的文件权限，npm ping 等等</li> <li><code>npm docs</code>
+打开包的文档地址</li> <li><code>npm dedupe</code>
+通过一些算法 将多个依赖包中重复依赖的包移除，只保留一个
+该命令别名为：npm ddp</li> <li><code>npm explore [ – ]</code>
+进入指定的包里执行一些命令，比如执行更新源代码，执行重新编译等</li> <li><code>npm edit</code>
+修改包内容</li> <li><code>npm get key val</code>
+获取某个配置</li> <li><code>npm init</code>
+初始化当前目录为一个包，会生成一个 package.json 的文件</li> <li><code>npm install</code>
+不带任何参数，会按照根目录下的 package.json 里的依赖包
+将安装包放在 ./node_modules 下（运行 npm 命令时所在的目录），如果没有 node_modules 目录，会在当前执行 npm 命令的目录下自动生成该目录
+会把该包安装到 node_modules 目录中，不会修改 package.json，之后运行 npm install 命令时，不会自动安装该包</li> <li><code>npm install [&lt;@scope&gt;/]</code>
+局部安装某个包，默认安装最新版本</li> <li><code>npm install [&lt;@scope&gt;/]@</code>
+局部安装指定版本的某个包（按照 tag）
+该命令的别名是：npm i</li> <li><code>npm install [&lt;@scope&gt;/] --save</code>
+简写为：npm install [&lt;@scope&gt;/] -S
+会在 package.json 的 dependencies 属性下添加该包的名称及版本号，之后运行 npm install 命令时，会自动安装模块依赖到 node_modules 目录中
+运行 npm install --production 或者注明 NODE_ENV 变量值为 production 时，会自动下载模块到 node_modules 目录中</li> <li><code>npm install [&lt;@scope&gt;/] --save-dev</code>
+简写为 npm install [&lt;@scope&gt;/] -D
+与 npm install [&lt;@scope&gt;/] --save 的区别是：
+--save-dev 会将模块依赖写入 devDependencies 节点，而 --save 是将模块依赖写入 dependencies 节点
+运行 npm install --production 或者注明 NODE_ENV 变量值为 production 时，npm install [&lt;@scope&gt;/] --save-dev 不会自动下载模块到 node_modules 目录中
+package.json 文件里面的 devDependencies 和 dependencies 对象的区别是什么呢；
+–save-dev 对应的 devDependencies 里面的插件只用于开发环境，不用于生产环境，而 –save 对应的 dependencies 是需要发布到生产环境的
+devDependencies 节点下的模块是开发时候需要的，如构建工具 glup、webpack，预处理器 less、sass 这些只在开发环境有用，所以使用 –save-dev 安装
+dependencies 节点下的模块是线上代码运行需要的，如 axios、vue-router、vuex，所以需要使用 –-save 安装</li> <li><code>npm install-test</code>
+它和 npm install 的区别是执行完 npm install 后立马执行 npm test</li> <li><code>npm install [&lt;@scope&gt;/] -g</code>
+全局安装某个包，默认安装最新版本
+npm install [&lt;@scope&gt;/] --save</li> <li><code>npm help</code>
+查看某个命令的帮助信息</li> <li><code>npm help-search</code>
+在帮助文档中查找包含关键词的文档列表</li> <li><code>npm link [&lt;@scope&gt;/][@]</code>
+将 npm 包创建快捷方式到全局 npm 的路径下</li> <li><code>npm login</code>
+登陆用户</li> <li><code>npm logout</code>
+退出当前登陆的 npm 账号</li> <li><code>npm ls、npm list、npm la、npm ll</code>
+查看当前 npm 包的依赖包列表
+npm ls 是 npm list 的简写</li> <li><code>npm outdated</code>
+查看当前安装的包里版本是否过期的信息</li> <li><code>npm owner add [&lt;@scope&gt;/]</code>
+添加某个用户作为某个包的管理者</li> <li><code>npm owner rm [&lt;@scope&gt;/]</code>
+移除某个用户作为某个包的管理者</li> <li><code>npm owner ls [&lt;@scope&gt;/]</code>
+查看某个包的管理者</li> <li><code>npm ping</code>
+验证 registry 的连通性和身份验证</li> <li><code>npm pack</code>
+将当前 npm 包文件打成一个压缩包</li> <li><code>npm prune</code>
+移除没有定义在 package.json 依赖配置上的包</li> <li><code>npm publish [|] [–tag ] [–access &lt;public|restricted&gt;]</code>
+发布一个包
+用户个人信息管理</li> <li><code>npm profile get [–json|–parseable] []</code>
+获取个人信息</li> <li><code>npm profile set [–json|–parseable]</code>
+设置个人信息</li> <li><code>npm profile set password</code>
+设置密码</li> <li><code>npm profile enable-2fa [auth-and-writes|auth-only]</code>
+设置开启双重验证</li> <li><code>npm profile disable-2fa</code>
+关闭开启双重验证</li> <li><code>npm prefix [-g]</code>
+查看最靠近 package.json 的父级目录</li> <li><code>npm root [-g]</code>
+查看本地或者全局 node-module 目录的位置</li> <li><code>npm repo []</code>
+打开包的源文件管理地址 比如 github 地址</li> <li><code>npm restart</code>
+运行当前目录下的 package.json 里的 scripts 里的 restart 命令，如果没有，则执行 npm stop 再执行 npm start</li> <li><code>npm run-script [-- …]</code>
+运行当前目录下的 package.json 里的 scripts 里的命令
+该命令的别名是：npm run</li> <li><code>npm rebuild [[&lt;@scope&gt;/]…]</code>
+执行编译某个包
+该命令的别名是：npm rb</li> <li><code>npm search [–long] [search terms …]</code>
+从远程仓库中搜索某个包的信息</li> <li><code>npm set key val</code>
+设置某个配置</li> <li><code>npm stop</code>
+运行当前目录下的 package.json 里的 scripts 里的 top 命令，如果有的话</li> <li><code>npm start</code>
+运行当前目录下的 package.json 里的 scripts 里的 start 命令，如果有的话</li> <li><code>npm star […]</code>
+将某个包加入当前用户的感兴趣的清单</li> <li><code>npm stars []</code>
+列出该用户所有感兴趣的包</li> <li><code>npm shrinkwrap</code>
+生成当前项目确定的依赖版本，类似 package-lock.json，但是还是有略微区别</li> <li><code>npm test [-- ]</code>
+运行当前目录下的 package.json 里的 scripts 里的 test 命令，如果有的话</li> <li><code>npm team</code>
+管理所属团队或者添加团队成员等</li> <li><code>npm token</code>
+身份令牌管理</li> <li><code>npm uninstall</code>
+卸载某个包
+该命令的别名是：npm un</li> <li><code>npm update [-g] […]</code>
+更新包
+该命令的别名是：npm up [-g][…]</li> <li><code>npm unpublish [&lt;@scope&gt;/</code>][@]
+取消发布包，将发布的包从远程仓库中删除</li> <li><code>npm unstar […]</code>
+将某个包移除当前用户清单</li> <li><code>npm version</code>
+查看各个依赖的版本</li> <li><code>npm whoami</code>
+npm 当前登陆用户</li> <li><code>npm -l</code>
+查看所有命令的用例信息</li> <li><code>npm -h</code>
+查看某个命令的用法</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/langyixuan/My-Blog/edit/main/src/posts/2022-10-06-npm常用命令总结 (二).md" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-43.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:1.2em;"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>
+      在 GitHub 上编辑此页
+    </a></div> <!----></footer> <!----> <div class="pager"><a href="/post/2022/10/05/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93-%E4%B8%80/" class="next">
+    下一篇<br> <span>
+      npm 常用命令总结（一）
+    </span></a> <a href="/post/2022/06/10/react-jsx%E7%9A%84%E4%BD%BF%E7%94%A8/" class="previous">
+    上一篇<br> <span>
+      React——JSX的使用
+    </span></a></div> <!----></main> <ul class="catalog-wrapper" style="width:0;top:0px !important;" data-v-55846976></ul></div> <div class="search-page" data-v-258a8948><span class="search-close"><svg aria-hidden="true" width="34.56" height="34.56" viewBox="-75.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:2.16em;"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg></span> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="menu-btn-container" data-v-6f5fbb48 data-v-258a8948><div class="menu-btn-wrapper" data-v-6f5fbb48><div class="menu-btn" data-v-6f5fbb48><div class="menu-btn-icon" style="display:;" data-v-6f5fbb48><span data-v-6f5fbb48></span> <span data-v-6f5fbb48></span> <span data-v-6f5fbb48></span></div> <div class="menu-text" style="display:none;" data-v-6f5fbb48>
+        0
+      </div> <svg class="menu-svg" data-v-6f5fbb48><circle cx="50%" cy="50%" r="48%" class="menu-border" style="stroke-dasharray:0% 314.15926%;" data-v-6f5fbb48></circle></svg></div> <div class="menu-btn-child-wrapper" data-v-6f5fbb48><a role="button" aria-label="Toggle light" title="Toggle light" class="toggle-mode menu-btn-child" data-v-6f5fbb48><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-43.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:1.2em;"><path d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"/></svg></a> <div class="menu-btn-child" data-v-6f5fbb48><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-75.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:1.2em;" data-v-6f5fbb48><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg></div> <div class="menu-btn-child" data-v-6f5fbb48><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-75.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:1.2em;" data-v-6f5fbb48><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg></div> <!----> <div class="menu-btn-child menu-btn-sidebar" data-v-6f5fbb48><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-1.6 -1.6 19.2 19.2" fill="currentColor" class="ov-icon" style="font-size:1.2em;" data-v-6f5fbb48><path d="M14 2a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V3a1 1 0 011-1h12zM2 1a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V3a2 2 0 00-2-2H2z"/><path d="M3 4a1 1 0 011-1h2a1 1 0 011 1v8a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/></svg></div></div></div></div> <div class="footer-wrapper footer" data-v-246298d9 data-v-258a8948><span data-v-246298d9>
+  &copy;<a href="https://github.com/langyixuan" target="_blank"> Yixuan Lang</a> 💖 2020-2021
+  <br>
+  Powered by <a href="https://vuepress.vuejs.org" target="_blank">VuePress</a> &
+  <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
+  </span></div></div><div class="global-ui"><div data-app="true" id="context-menu" class="v-application v-application--is-ltr theme--light"><div class="v-application--wrap"><div class="v-menu"><!----></div> <input id="clipboard-container" readonly="readonly" value=""></div></div><div tabindex="-1" role="dialog" aria-hidden="true" class="pswp"><div class="pswp__bg"></div> <div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div> <div class="pswp__item"></div> <div class="pswp__item"></div></div> <div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div> <button class="pswp__button pswp__button--close"></button> <button class="pswp__button pswp__button--share"></button> <button class="pswp__button pswp__button--fs"></button> <button class="pswp__button pswp__button--zoom"></button> <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div> <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div> <button class="pswp__button pswp__button--arrow--left"></button> <button class="pswp__button pswp__button--arrow--right"></button> <div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div></div></div>
+    <script src="/assets/js/app.1cc6a2a0.js" defer></script><script src="/assets/js/10.af7af87f.js" defer></script><script src="/assets/js/1.d721c287.js" defer></script><script src="/assets/js/2.a6625a17.js" defer></script><script src="/assets/js/49.18a23d31.js" defer></script>
+  </body>
+</html>
